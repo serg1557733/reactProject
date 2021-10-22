@@ -1,8 +1,10 @@
 //import React from 'react'; or 
-import { Component, StrictMode} from 'react';  //  destruct sintax
+import {Component, StrictMode} from 'react';  //  destruct sintax
 import './App.css';
 
 //using another sintax class
+
+
 class Nav extends Component {
     render() {
         return  <nav class="header__nav"> 
@@ -16,26 +18,33 @@ class Nav extends Component {
                         <span></span>
                     </div>   
                 </nav> 
-        }
-     
+        }   
 }
 
-
-//another function 
+//another sintx function 
 
 function Btn() {
 
-  const text = 'Log in';
-  const logged = true; //conditions
+    const text = 'Log in';
+    const logged = true; //conditions
 
- return <div class="btn btn_header">
-            <a href="#"> {logged?'GET STARTED': text}</a>
-        </div>
+    return <div class="btn btn_header">
+                <a href="#"> {logged?'GET STARTED': text}</a>
+           </div>
 }
 
-const Logo = () => <a href="#"><img src="logo.png" alt="Food"/></a>;
 
-//another const 
+
+//another sintax const 
+let h2Text = 'Find your Favorite',
+    h1Text = 'RECIPES',
+    h4Text = 'OR SEND US YOUR OWN RECIPES AND GET REWARDED!';
+
+let Logo = () => <a href="#"><img src="logo.png" alt="Food"/></a>;
+
+
+
+
 const Header = () => {
     return <header class="header">
               <div class="container">
@@ -44,16 +53,16 @@ const Header = () => {
                       <Nav/>
                   </div>
                   <div class="header__content">
-                      <h2>Find your Favorite</h2>
-                      <h1>RECIPES</h1>
+                      <h2>{h2Text}</h2>
+                      <h1>{h1Text}</h1>
                       <Btn/>
-                      <h4>OR SEND US YOUR OWN RECIPES AND GET REWARDED!</h4>
+                      <h4>{h4Text}</h4>
                   </div>
               </div>
           </header>
-  }
+}
 
-  function App() {
+function App() {
     return (
       <div>
           <StrictMode>
@@ -61,8 +70,7 @@ const Header = () => {
           </StrictMode>
       </div>
     );
-  }
-
+}
 
 export default App;
 
