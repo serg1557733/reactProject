@@ -1,9 +1,9 @@
 //import React from 'react'; or 
 import {Component, StrictMode} from 'react';  //  destruct sintax
 import './App.css';
+import About from './About';
 
 //using another sintax class
-
 
 class Nav extends Component {
     render() {
@@ -22,7 +22,6 @@ class Nav extends Component {
 }
 
 //another sintx function 
-
 function Btn() {
 
     const text = 'Log in';
@@ -33,17 +32,12 @@ function Btn() {
            </div>
 }
 
-
-
 //another sintax const 
 let h2Text = 'Find your Favorite',
     h1Text = 'RECIPES',
     h4Text = 'OR SEND US YOUR OWN RECIPES AND GET REWARDED!';
 
 let Logo = () => <a href="#"><img src="logo.png" alt="Food"/></a>;
-
-
-
 
 const Header = () => {
     return <header class="header">
@@ -67,10 +61,9 @@ function App() {
       <div>
           <StrictMode>
               <Header/>
+              <About/>
           </StrictMode>
       </div>
     );
 }
-
 export default App;
-

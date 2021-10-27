@@ -1,0 +1,64 @@
+.about {
+    min-height: 436px;
+}
+.about__wrapper {
+        padding: 101px 0 97px 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;     
+}
+.about__item {
+        width: 360px;
+        min-height: 67px;
+        margin: 19px 21px 97px 17px;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.13;
+        letter-spacing: 0.8px;
+        text-align: center;
+        color: #000;
+}
+.about__item  h3 {
+            font-family: Lato;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.67;
+            letter-spacing: 0.9px;
+            color: #000;
+            text-transform: uppercase;
+}
+.about__item  span {
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.33;
+            letter-spacing: 0.8px;
+            text-align: left;
+            color:#999999; 
+}   
+
+.about__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 107px;
+        height: 107px;
+        margin: 0 auto;
+        border:2px solid black ;
+        border-radius: 100%;
+        margin-bottom: 20px;
+}
+.about__divider {
+        width: 88px;
+        height: 1px;
+        margin: 0 auto;
+        background-color:#f57365;
+}
+.about__divider_app {
+            margin: 0;
+            margin-bottom: 19px;
+}
+.about__divider_food {
+            margin-bottom: 40px;
+}
